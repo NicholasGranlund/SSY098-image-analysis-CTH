@@ -1,0 +1,19 @@
+function label = classify_digit(digit_image, digits_training)
+%CLASSIFY_DIGIT Summary of this function goes here
+%   By: Nicholas Granlund
+
+highest_sim = 0;
+I = gradient_descriptor(digit_image, [20 20], 6);
+
+for i=1:length(digits_training)
+    I = digit_image;
+    J = digits_training(i).image;
+
+    
+    if sim > highest_sim
+        label = digits_training(i).label;
+        highest_sim = sim;
+    end
+
+end
+

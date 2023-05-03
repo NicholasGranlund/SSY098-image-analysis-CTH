@@ -1,0 +1,26 @@
+function desc = gradient_descriptor(image, position, radius)
+ 
+    % Initialize the desc vector
+    desc = zeros(1,72);
+
+    % Compute gaussian gradient for the image (std = radius)
+    [grad_x, grad_y] = gaussian_gradients(image, radius);
+
+    % Divide gradient into 3x3 regions
+    region_centres = place_regions(position, radius);
+
+    % iterate ocer the regions
+    for i=1:length(region_centres)
+        grad_x_reg = get_patch(grad_x)
+        grad_y_reg = 
+        histogram = gradient_histogram(grad_x, grad_y)
+        desc(((i-1)*8)+1:i*8) = histogram
+
+    end
+
+
+
+    
+    % Normalize the descriptor
+    desc = desc / norm(desc);
+end
