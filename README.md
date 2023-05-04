@@ -8,7 +8,7 @@ This repository contains the Labs 1-4 for the course SSY098 Image Analysis from 
 
 ## Lab 1: The SIFT Descriptor
 
-- In this laboratory session, the topic of discussion is the Scale-Invariant Feature Transform (SIFT) descriptor. SIFT is a well-known technique used for detecting and describing features in the field of computer vision.
+- This laboratory session covers the Scale-Invariant Feature Transform (SIFT) descriptor, which is a well-known technique for detecting and describing features in computer vision. SIFT is particularly powerful because it can detect features that are invariant to changes in scale, rotation, and other transformations in images.
 
 
 ## Lab 2: Learning and convolutional neural networks
